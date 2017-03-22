@@ -1,0 +1,118 @@
+html {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #01426E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.g-doc {
+    width: 198px;
+    height: 78px;
+    padding: 5px;
+    color: #01426e;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.g-doc .disabled {
+    color: #ddd;
+    cursor: default;
+}
+
+.line1 {}
+
+.account3 {
+    margin-bottom: 6px;
+    padding-left: 19px;
+}
+
+.unread {
+    color: #d92000;
+}
+
+.line2 {
+    margin-top: 10px;
+    padding-left: 19px;
+}
+
+.line2-1 {}
+
+.line2-2 {
+    padding-top: 8px;
+    padding-bottom: 9px;
+    line-height: 12px;
+}
+
+.line3 {
+    margin-top: 10px;
+    padding-left: 19px;
+}
+
+.line3-1 {
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    line-height: 12px;
+}
+
+.add-account-container {
+    display: none;
+    width: 298px;
+    height: 78px;
+    padding: 5px;
+    font-size: 12px;
+    color: #01426e;
+    line-height: 20px;
+}
+
+.add-content {
+    height: 30px;
+    display: flex;
+}
+
+.add-content input {
+    padding: 0;
+    height: 26px;
+    outline: none;
+}
+
+.add-content select {
+    height: 100%;
+}
+
+.add-content select option {
+    height: 20px;
+}
+
+.add-buttons {
+    margin-top: 10px;
+}
+
+.add-buttons button {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.desc-of-tool {
+    display: none;
+    padding: 5px;
+    width: 298px;
+    font-size: 16px;
+}
+
+.tip {
+    color: red;
+}
+
+#accoutdiv {
+    padding-left: 20px;
+    color: black;
+}

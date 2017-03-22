@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" charset="UTF-8"/>
+        <script src="../js/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+        <script src="../js/menu.js" charset="utf-8" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="g-doc">
+            <div class="line1" id="accoutdiv"></div>
+            <div class="line2">
+                <div class="line2-1">
+                    <a href="#" id="addAccount">设置帐号</a>
+                </div>
+            </div>
+            <div class="line3">
+                <div class="line3-1 js-desc">
+                    说明
+                </div>
+            </div>
+        </div>
+        <!-- 添加账号界面 -->
+        <div class="add-account-container">
+            <div class="add-content">
+                <input type="text" autofocus="true" placeholder="请输入账号">
+                <select name="mail-server" id="mail-server-select">
+                    <option value="163.com">163.com</option>
+                    <option value="126.com">126.com</option>
+                    <option value="yeah.net">yeah.net</option>
+                </select>
+            </div>
+            <div class="tip">账号一定填写正确，没有账号错误检查</div>
+            <div class="add-buttons">
+                <button class="save-account">确定</button>
+                <button class="cancle-add">取消</button>
+            </div>
+        </div>
+    
+        <!-- 工具简单说明 -->
+        <div class="desc-of-tool">
+            <div>工具只是获取账号的未读邮件数目然后在chrome扩展图标上显示，没有其他的任何提示功能，绝对安静不扰民。</div>
+            <button class="js-back">返回</button>
+        </div>
+    </body>
+</html>
