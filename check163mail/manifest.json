@@ -1,6 +1,6 @@
 {
     "name": "check163mail",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "检查网易邮箱未阅读邮件数目",
     "icons": {
