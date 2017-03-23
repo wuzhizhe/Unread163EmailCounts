@@ -12,6 +12,7 @@ function setEventListeners() {
 	document.querySelector('.cancle-add').addEventListener('click', cancleAccountClick);
 	document.querySelector('.js-desc').addEventListener('click', descClick);
 	document.querySelector('.js-back').addEventListener('click', backClick);
+	document.querySelector('#accoutdiv').addEventListener('click', gotoEmail);
 }
 
 //添加账号
@@ -43,7 +44,7 @@ function descClick() {
 }
 //隐藏说明
 function backClick() {
-	document.querySelector('.desc-of-tool').style.display = 'none';	
+	document.querySelector('.desc-of-tool').style.display = 'none';
 	document.querySelector('.g-doc').style.display = 'block';
 }
 
@@ -54,5 +55,23 @@ function setAccountShow() {
 }
 
 function startGet() {
-	chrome.extension.sendMessage({ msg: "start" });
+	chrome.extension.sendMessage({
+		msg: "start"
+	});
+}
+
+//跳转到邮箱登陆页面
+function gotoEmail() {
+	var email = window.localStorage.getItem('email_163_check_account'),
+		hostMap = {
+			"163.com": "http://mail.163.com",
+			"126.com": "http://www.126.com",
+			"yeah.net": "http://www.yeah.net"
+		},
+		domain = email.split('@')[1],
+		url = hostMap[domain];
+
+	chrome.tabs.create({
+		url: url
+	});
 }
