@@ -34,6 +34,13 @@ function getUserNewMsgCount() {
 }
 
 function getUnread() {
+
+    async.map(options, (item, callback) => {
+        sendRequest(item);
+    }, (err, results) => {
+        
+    });
+
     sendRequest({
         url: url,
         username: username
